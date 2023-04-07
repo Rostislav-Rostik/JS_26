@@ -1,0 +1,18 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Країни та міста</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="app7.js"></script>
+</head>
+<body ng-app="myApp" ng-controller="myCtrl">
+    <ul>
+        <li ng-repeat="(country, cities) in workers">
+            {{country}}:
+            <span ng-repeat="city in cities">{{city}} </span>
+        </li>
+    </ul>
+    <a href="index.html">На головну</a>
+</body>
+</html>

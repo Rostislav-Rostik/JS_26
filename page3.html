@@ -1,0 +1,15 @@
+﻿<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+    <title>Angular Reverse List Demo</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="app2.js"></script>
+</head>
+<body ng-controller="myCtrl">
+    <ul>
+        <li ng-repeat="item in list">{{ item }}</li>
+    </ul>
+    <button ng-click="reverseList()">Reverse list</button>
+    <a href="index.html">На головну</a>
+</body>
+</html>
